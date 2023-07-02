@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { ReactComponent as CardImg } from "../frontendMentor/assets/images/illustration-sign-up-desktop.svg";
 import { ReactComponent as Check } from "../frontendMentor/assets/images/icon-list.svg";
