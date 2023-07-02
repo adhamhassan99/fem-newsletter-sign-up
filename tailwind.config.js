@@ -3,8 +3,8 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      mobile: { max: "375px" },
-      mobileEnd: "376px",
+      mobile: { max: "500px" },
+      mobileEnd: "501px",
 
       desktop: "1440px",
     },
