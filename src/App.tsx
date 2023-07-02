@@ -4,6 +4,9 @@ import { useState } from "react";
 import { ReactComponent as CardImg } from "../frontendMentor/assets/images/illustration-sign-up-desktop.svg";
 import { ReactComponent as Check } from "../frontendMentor/assets/images/icon-list.svg";
 import { ReactComponent as SuccessIcon } from "../frontendMentor/assets/images/icon-success.svg";
+
+import illustr1 from "../frontendMentor/assets/images/icon-success.svg";
+import illustrMob from "../frontendMentor/assets/images/illustration-sign-up-mobile.svg";
 function App() {
   const [email, setEmail] = useState("");
   const [successSubmit, setSuccessSubmit] = useState<boolean>(false);
@@ -124,11 +127,7 @@ function App() {
         <div className="mobileEnd:hidden w-full h-full px-8 py-14 bg-White flex">
           {/* <div className="flex flex-col mt-36 bg-yellow-200"> */}
           <div className="flex flex-col flex-1 mt-36">
-            <img
-              className="w-fit h-fit"
-              src="../frontendMentor/assets/images/icon-success.svg"
-              alt=""
-            />
+            <img className="w-fit h-fit" src={illustr1} alt="" />
             <div className="text-6xl font-bold text-DarkSlateGrey mt-14">
               Thanks for subscribing!
             </div>
@@ -150,10 +149,7 @@ function App() {
       ) : (
         // </div>
         <div className="mobileEnd:hidden flex flex-col h-full bg-White">
-          <img
-            className="w-screen -translate-y-6"
-            src="../frontendMentor/assets/images/illustration-sign-up-mobile.svg"
-          />
+          <img className="w-screen -translate-y-6" src={illustrMob} />
           <div className="px-7 mt-2 font-medium h-full flex flex-col pb-7">
             <div className="flex-1">
               <div className="text-5xl font-bold text-DarkSlateGrey">
